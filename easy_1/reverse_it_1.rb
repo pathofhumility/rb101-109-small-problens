@@ -1,0 +1,12 @@
+# (x) split the string into an array
+# (x) ?? use Array.reverse
+# (x) convert the array into a string with Array.join
+
+def reverse_sentence(str)
+  str.split.reverse.join(' ')
+end
+
+puts reverse_sentence('Hello World') == 'World Hello'
+puts reverse_sentence('Reverse these words') == 'words these Reverse'
+puts reverse_sentence('') == ''
+puts reverse_sentence('    ') == '' # Any number of spaces results in ''
